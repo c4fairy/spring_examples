@@ -1,4 +1,4 @@
-package ru.envi;
+package ru.value;
 
 import org.springframework.boot.ApplicationRunner;
 import org.springframework.boot.SpringApplication;
@@ -6,17 +6,16 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
-public class EnvironmentVarsConfig {
-    //SpringApplication.setDefaultProperties
-    //SpringApplication.setAddCommandLineProperties(false)
+public class ValueApp {
     public static void main(String[] args) {
         System.out.println("Starting");
-        SpringApplication app = new SpringApplication(EnvironmentVarsConfig.class);
+        SpringApplication app = new SpringApplication(ValueApp.class);
+        app.setAddCommandLineProperties(false);
         app.run(args);
     }
 
     @Bean
-    public Smth doSmth(){
+    public Smth doSmth() {
         return new Smth();
     }
 
@@ -24,5 +23,4 @@ public class EnvironmentVarsConfig {
     public ApplicationRunner applicationRunner() {
         return args -> doSmth().printSmth();
     }
-
 }

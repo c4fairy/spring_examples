@@ -1,2 +1,7 @@
 my:
-  word: doSmth
+  word: byEnvironment
+  value: byValue
+  conf: "${random.value}"
+
+types:
+  duration: P3DT5H40M30S
