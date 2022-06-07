@@ -5,3 +5,8 @@ my:
 
 types:
   duration: P3DT5H40M30S
+
+
+spring:
+  datasource:
+    data: application.yml

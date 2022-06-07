@@ -1,0 +1,8 @@
+config:
+  name: "name"
+  num: "12"
+  nameList[0]: "MyName"
+  nameList[1]: "YourName"
+  nameMap.id: "${random.value}"
+  nameMap.name: "My Name"
+  nameType: "SHORT"
