@@ -1,3 +1,5 @@
+---
+#   name: NAME
 config:
   name: "Dina"
   num: 50
