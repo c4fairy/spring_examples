@@ -11,7 +11,6 @@ public class AppConfig {
     private int num;
     private List<String> nameList;
     private Map<String, String> nameMap;
-
     private NameType nameType;
 
     public enum NameType {
@@ -25,21 +24,5 @@ public class AppConfig {
             this.id = id;
             this.name = name;
         }
-        public int getId() {
-            return id;
-        }
-
-    }
-
-    public void printProps() {
-        System.out.println("name = " + name);
-        System.out.println("num = " + num);
-        for (int i = 0; i < nameList.size(); i++)
-            System.out.println("nameList element " + i + " = " + nameList.get(i));
-        System.out.println("nameMap = ");
-        for (Map.Entry<String, String> entry : nameMap.entrySet()) {
-            System.out.println(entry.getKey() + ":" + entry.getValue());
-        }
-        System.out.println("nameType = " + nameType.getId());
     }
 }

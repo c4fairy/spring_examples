@@ -1,0 +1,1 @@
+java -jar target/SpringPattern-1.0-SNAPSHOT.jar --spring.config.location=file:./application-ref.yml
