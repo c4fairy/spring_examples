@@ -7,7 +7,13 @@ import java.util.Map;
 
 @Data
 public class AppConfig {
-    private String name;
+    /**
+     * Имя
+     */
+    private String name = "Name";
+    /**
+     * Номер
+     */
     private int num;
     private List<String> nameList;
     private Map<String, String> nameMap;
