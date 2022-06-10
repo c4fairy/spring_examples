@@ -1,4 +1,4 @@
-package ru.dina.simple_rest_project;
+package ru.dina.simple_rest_project.server;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ControllerAdvice;

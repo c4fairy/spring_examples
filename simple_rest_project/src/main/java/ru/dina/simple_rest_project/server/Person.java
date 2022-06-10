@@ -1,4 +1,4 @@
-package ru.dina.simple_rest_project;
+package ru.dina.simple_rest_project.server;
 
 import lombok.Data;
 

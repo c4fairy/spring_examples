@@ -1,4 +1,4 @@
-package ru.dina.simple_rest_project;
+package ru.dina.simple_rest_project.server;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -14,8 +14,8 @@ public class LoadDatabase {
     CommandLineRunner initDatabase(PersonRepository repository) {
 
         return args -> {
-            log.info("Preloading " + repository.save(new Person("Bilbo Baggins", "burglar")));
-            log.info("Preloading " + repository.save(new Person("Frodo Baggins", "thief")));
+            log.info("Preloading " + repository.save(new Person("Name1 Surname1", "Some address1")));
+            log.info("Preloading " + repository.save(new Person("Name2 Surname2", "Some address2")));
         };
     }
 }
